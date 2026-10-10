@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in javascript</title>
+    <style>
+        #box{
+            background-color: rgb(9, 181, 220);
+            margin: 20px;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+        function Eventcall(){
+            alert("this are the mousevents");
+        }
+        function section(){
+            alert("example of function 2");
+        }
+        function section1(){
+            alert("example of function 3");
+        }
+        function section2(){
+            alert("example of function 4");
+        }
+    </script>
+</head>
+<body>
+    <h1>Events in javascript</h1>
+
+    <div id="box"onmouseup="Eventcall()" >callme1</div>
+    <button onclick="Eventcall()">Click Me</button>
+    <div id="box" onmousedown="section()">callme2</div>
+    <button onclick="section()">Click Me</button>
+    <div id="box" onmouseover="section1()">callme3</div>
+    <button onclick="section1()">Click Me</button>
+    <div id="box" onmouseout="section2()">callme4</div>
+    <button onclick="section2()">Click Me</button>
+    <div id="form" keydown="section3()">form 1</div>
+    <button onclick="section3()">Click Me</button>
+    <div id ="form" keyup="section4()">form2  </div>
+    <button onclick="section4()">Click Me</button>
+    <div id="form" keypress="section5()">form 3</div>
+    <button onclick="section5()">Click Me</button>
+    <p></p>
+</body>
+</html>
